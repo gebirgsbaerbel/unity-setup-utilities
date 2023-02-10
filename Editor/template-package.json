@@ -1,0 +1,16 @@
+{
+  "name": "com.gebirgsbaerbel.<package-name>",
+  "version": "0.0.1",
+  "displayName": "<name>",
+  "description": "<description>",
+  "unity": "2021.2",
+  "keywords": [
+    "library",
+    "utility"
+  ],
+  "author": {
+    "name": "Gebirgsbaerbel",
+    "email": "reichart.barbara@gmail.com",
+    "url": ""
+  }
+}

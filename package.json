@@ -1,0 +1,16 @@
+{
+  "name": "com.gebirgsbaerbel.setup-utilities",
+  "version": "0.0.1",
+  "displayName": "Setup Utilities",
+  "description": "Increases Speed on project setup",
+  "unity": "2021.2",
+  "keywords": [
+    "library",
+    "utility"
+  ],
+  "author": {
+    "name": "Gebirgsbaerbel",
+    "email": "reichart.barbara@gmail.com",
+    "url": ""
+  }
+}

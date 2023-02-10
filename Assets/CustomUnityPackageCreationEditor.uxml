@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:ScrollView style="align-items: auto;">
+        <ui:Label text="Custom Package Info" display-tooltip-when-elided="true" name="CustomPackageInfo" />
+        <ui:GroupBox>
+            <ui:TextField picking-mode="Ignore" label="Display name" name="DisplayName" style="flex-direction: row; justify-content: space-between;" />
+            <ui:TextField picking-mode="Ignore" label="Name" name="Name" />
+            <ui:TextField picking-mode="Ignore" label="Description" name="Description" multiline="true" />
+            <ui:TextField picking-mode="Ignore" label="Organization name" value="Gebirgsbaerbel" text="Gebirgsbaerbel" name="OrganizationName" />
+            <ui:TextField picking-mode="Ignore" label="Country Code" value="de" text="de" name="CountryCode" />
+        </ui:GroupBox>
+        <ui:Label text="Minimal Unity Version" display-tooltip-when-elided="true" name="MinimalUnityVersion" />
+        <ui:GroupBox>
+            <uie:IntegerField label="Minor" value="2" name="Minor" />
+            <uie:IntegerField label="Major" value="2021" name="Major" />
+        </ui:GroupBox>
+        <ui:Label text="Author" display-tooltip-when-elided="true" />
+        <ui:GroupBox>
+            <ui:TextField picking-mode="Ignore" label="Name" name="AuthorName" value="Gebirgsbaerbel" text="Gebirgsbaerbel" />
+            <ui:TextField picking-mode="Ignore" label="Email" value="reichart.barbara@gmail.com" text="reichart.barbara@gmail.com" name="Email" />
+        </ui:GroupBox>
+        <ui:Label text="Create Folders" display-tooltip-when-elided="true" />
+        <ui:GroupBox>
+            <ui:Toggle label="Runtime" value="true" name="ShouldAddRuntimeFolder" />
+            <ui:Toggle label="Editor" name="ShouldAddEditorFolder" />
+            <ui:Toggle label="Tests" name="ShouldAddTestsFolder" />
+            <ui:Toggle label="Documentation~" name="ShouldAddDocumentationFolder" />
+            <ui:Toggle label="Samples~" name="ShouldAddSamplesFolder" />
+        </ui:GroupBox>
+        <ui:Button text="Create Custom Package" display-tooltip-when-elided="true" name="Create" />
+    </ui:ScrollView>
+</ui:UXML>
