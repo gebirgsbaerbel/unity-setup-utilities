@@ -21,15 +21,18 @@ namespace gebirgsbaerbel.Utilities
         }
 
         [MenuItem("Tools/Packages/Terrain + TerrainPhysics")]
-        static void AddNewInputSystem() {
+        static void AddTerrain() {
             Packages.InstallUnityPackage("terrain");
             Packages.InstallUnityPackage("terrainphysics");
         }
 
 
         [MenuItem("Tools/Packages/Tilemap")]
-        static void AddPostProcessing() => Packages.InstallUnityPackage("tilemap");
-        
+        static void AddTilemap() => Packages.InstallUnityPackage("tilemap");
+
+        [MenuItem("Tools/Packages/ProBuilder")]
+        static void AddProBuilder() => Packages.InstallUnityPackage("probuilder");
+
     }
     
 }
