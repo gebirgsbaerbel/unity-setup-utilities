@@ -5,7 +5,6 @@ using UnityEngine;
 using Debug = UnityEngine.Debug;
 using static System.IO.Path;
 using static UnityEditor.AssetDatabase;
-using UnityEditor;
 
 namespace gebirgsbaerbel.Utilities
 {

@@ -12,7 +12,8 @@ namespace gebirgsbaerbel.Utilities
 {
     public class CustomUnityPackageCreationEditor : EditorWindow
     {
-        [SerializeField] VisualTreeAsset uiLayoutTemplate;
+        [SerializeField] 
+        VisualTreeAsset uiDocument;
         
         TextField displayNameTextfield;
         TextField nameTextfield;
@@ -45,7 +46,7 @@ namespace gebirgsbaerbel.Utilities
         /// </summary>
         private void CreateGUI()
         {
-            var treeAsset = uiLayoutTemplate.CloneTree();
+            var treeAsset = uiDocument.CloneTree();
             rootVisualElement.Add(treeAsset);
 
             rootVisualElement.Query<Button>("Create").First().clicked += CreateCustomPackage;

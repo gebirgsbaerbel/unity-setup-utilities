@@ -1,0 +1,8 @@
+namespace gebirgsbaerbel {
+
+    public enum #SCRIPTNAME#
+    {
+            #NOTRIM#
+    }
+
+}

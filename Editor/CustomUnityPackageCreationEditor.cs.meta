@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - m_ViewDataDictionary: {instanceID: 0}
-  - uiLayoutTemplate: {fileID: 9197481963319205126, guid: 6c241bc05ce7ce04aa494c390ed9875f,
+  - uiDocument: {fileID: 9197481963319205126, guid: 6c241bc05ce7ce04aa494c390ed9875f,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

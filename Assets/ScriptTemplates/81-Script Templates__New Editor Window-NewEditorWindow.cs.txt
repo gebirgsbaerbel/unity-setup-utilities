@@ -1,0 +1,44 @@
+using UnityEngine;
+using UnityEditor;
+using UnityEngine.UIElements;
+
+namespace #NAMESPACE# {
+
+    public class #SCRIPTNAME#: EditorWindow
+    {
+        [SerializeField]
+        VisualTreeAsset uiDocument;
+
+        // Example Fields
+        // TextField exampleTextfield;
+        // IntegerField exampleIntegerField;
+        // Toggle exampleToggle;
+
+        [MenuItem("Custom Menu/#SCRIPTNAME#")]
+        public static void ShowWindow()
+        {
+            var window = GetWindow <#SCRIPTNAME#>("#SCRIPTNAME#");
+            window.titleContent = new GUIContent("Title");
+            window.minSize = new Vector2(450, 430);
+        }
+
+        /// <summary>
+        /// Called when the window is created
+        /// Use to connect UI elements with corresponding values
+        /// </summary>
+        private void CreateGUI()
+        {
+            // exampleTextfield = rootVisualElement.Q<TextField>("exampleTextfield");
+            // exampleIntegerField = rootVisualElement.Q<IntegerField>("exampleIntegerField");
+            // exampleToggle = rootVisualElement.Q<Toggle>("exampleToggle");
+
+            // React to value changes
+            // exampleTextfield.RegisterValueChangedCallback(e =>
+            // {
+            //     Debug.Log("exampleTextfield: " + e.newValue);
+            // });
+        }
+
+    }
+
+}
