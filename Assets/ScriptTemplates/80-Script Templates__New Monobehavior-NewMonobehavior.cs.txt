@@ -10,7 +10,7 @@ namespace #NAMESPACE#
 
         #endregion
 
-        #region Variables
+        #region Methods
         void Start()
         {
         
