@@ -7,6 +7,7 @@ using Debug = UnityEngine.Debug;
 using static UnityEditor.AssetDatabase;
 using static System.IO.Path;
 using System;
+using Codice.CM.WorkspaceServer.Tree.GameUI.HeadTree;
 
 namespace gebirgsbaerbel.Utilities
 {
@@ -111,7 +112,7 @@ namespace gebirgsbaerbel.Utilities
             // Create essential package files
             CreateFile(packagePath, "README.md");
             CreateFile(packagePath, "LICENSE.md");
-            CreateFile(packagePath, "CHANGELOG.md");
+            CopyChangelogTemplate(packagePath);
 
             var dataPath = Application.dataPath;
             CreatePackageJson(dataPath, packageInfo);
@@ -128,6 +129,21 @@ namespace gebirgsbaerbel.Utilities
             }
             Refresh();
             Close();
+        }
+
+        /// <summary>
+        /// Copy the template file for the package
+        /// </summary>
+        /// <param name="packagePath">Path of the package that is currently created.</param>
+        private void CopyChangelogTemplate(string packagePath)
+        {
+            var filePath = GetFullPath("Packages/com.gebirgsbaerbel.setup-utilities/Assets/Changelog-Template.md");
+            var targetPath = Combine(packagePath, "CHANGELOG.md");
+            Debug.Log(filePath + "     " + targetPath);
+            if (File.Exists(filePath))
+            {
+                File.Copy(filePath, targetPath);
+            }
         }
 
         /// <summary>
