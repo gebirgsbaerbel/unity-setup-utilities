@@ -33,6 +33,8 @@ namespace gebirgsbaerbel.Utilities
         [MenuItem("Tools/Packages/ProBuilder")]
         static void AddProBuilder() => Packages.InstallUnityPackage("probuilder");
 
+        [MenuItem("Tools/Packages/Cinemachine")]
+        static void AddCinemachine() => Packages.InstallUnityPackage("cinemachine");
     }
     
 }
