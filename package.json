@@ -1,6 +1,6 @@
 {
   "name": "com.gebirgsbaerbel.setup-utilities",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Setup Utilities",
   "description": "Increases Speed on project setup",
   "unity": "2021.2",
